@@ -1,0 +1,29 @@
+{
+  "name": "schedule-app",
+  "version": "1.0.0",
+  "description": "a todo app",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamwebdev/Schedule-app---node.js.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "todo",
+    "schedule"
+  ],
+  "author": "Utkarsh Bajpai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamwebdev/Schedule-app---node.js/issues"
+  },
+  "homepage": "https://github.com/gamwebdev/Schedule-app---node.js#readme"
+}
