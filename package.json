@@ -4,6 +4,8 @@
   "description": "a todo app",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
     "express": "^4.15.3"
   },
   "devDependencies": {},
