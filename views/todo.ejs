@@ -6,19 +6,20 @@
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/assets/styles.css"> <!-- study on it -->
+  <script src="/assets/todo-list.js"></script>
   </head>
 
   <body>
     <h1> To-Do List </h1>
     <div id="todo-table">
-      <form id="" action="">
+      <form>
         <input type="text" name="item" placeholder="add more new items" required />
         <button type="submit"> Add Item </button>
       </form>
       <ul>
-        <li> Product 1 </li>
-        <li> Product 2 </li>
-        <li> Product 3 </li>
+        <% for(var i=0; i<todos.length; i++){ %>
+            <li> <%= todos[i].item %> </li>
+        <% } %>
       </ul>
     </div>
   </body>
