@@ -10,6 +10,6 @@ app.use(express.static('./public')); //study deeply
 
 todoController(app);
 
-app.listen(3600);
+app.listen(3000);
 
-console.log('we are listening to the port 3000');
+console.log('we are listening to the port');
