@@ -1,5 +1,21 @@
 var bodyParser       = require('body-parser');
 
+var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+
+mongoose.connect('mongodb://test:test@ds127963.mlab.com:27963/todo', { useMongoClient: true })
+
+
+var todoSchema = new mongoose.Schema(function(){
+  stock: String
+});
+
+var Todo = mongoose.model('Todo', todoSchema);
+
+var itemOne = Todo({stock: "water flowers"}).save(function(err){
+  if (err) throw err;
+  console.log('item saved');
+});
 
 var data = [{item: 'get milk'}, {item: 'walk dog'}, {item: 'movies'}];
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
