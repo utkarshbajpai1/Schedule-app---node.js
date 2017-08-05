@@ -6,7 +6,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://gamwebdev:gamwebdev@ds041841.mlab.com:41841/gamwebdevster123', { useMongoClient: true })
 
 
-var todoSchema = new mongoose.Schema(function(){
+var todoSchema = new mongoose.Schema({
   item: String
 });
 
